@@ -1,0 +1,117 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65))
+        ,url(../Pictures/food.jpg)no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 650px;
+    height: 550px;
+    margin-right: 200px;
+    margin-top: 90px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 50vh;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.wd{
+    width: 430px;
+    height: 539px;
+    background-color: black;
+    /* border: 1px solid white; */
+    opacity: 0.8;
+    padding: 65px;
+    margin-left: 7px;
+}
+
+.wd h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+    margin-top: 200px;
+}
+
+.wd h4{
+    text-align: center;
+    color: darkgray;
+    font-weight: normal;
+}
+
+.inputbox{
+    position: relative;
+    margin: 10px ;
+    width: 250px;
+}
+
+.inputbox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25) ;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
+
+.inputbox span{
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span{
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: black;
+    opacity: 0.9;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    letter-spacing: 0.2em;
+}
+
+.inputbox input:valid ,
+.inputbox input:focus {
+    box-shadow: 0 5px 16px 0 rgba(248, 248, 248, 0.24), 0 17px 50px 0 rgba(150, 142, 142, 0.19);
+}
+
+.box button {
+    background-color: transparent; 
+    color: white;
+    border: 1px solid white;
+    padding: 16px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 100px 73px; */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}  
+  
+.box button:hover {
+    /* background-color: #555555; */
+    color: white;
+    box-shadow: 0 5px 16px 0 rgba(248, 248, 248, 0.24), 0 17px 50px 0 rgba(150, 142, 142, 0.19);
+    border: 1px solid darkgray;
+}

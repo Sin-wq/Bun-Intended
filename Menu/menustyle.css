@@ -1,0 +1,150 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65))
+        ,url(../Pictures/food.jpg)no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 1060px;
+    float: right;
+    border: 1px solid none;
+}
+
+
+.box ul li{
+    width: 120px;
+    border-radius: 7px;
+    /* float: left; */
+    margin: 10px auto;
+    text-align: center;
+    background-color: transparent; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.box ul li a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+.box ul li:hover{
+    color: white;
+    box-shadow: 0 5px 16px 0 rgba(248, 248, 248, 0.24), 0 17px 50px 0 rgba(150, 142, 142, 0.19);
+    border: 1px solid darkgray;
+}
+
+.box ul li a:hover{
+    color: white;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 430px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px gray;
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 220;
+    width: 240;
+    background: rgba(27,27,27,.5);
+}
+
+.card:hover h1{
+    visibility: visible;
+}
+
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+img{
+    object-fit: cover;
+    width: 458px;
+    height: 430px;
+    transition: .5s;
+}
+
+.card:hover img{
+    transform: rotate(-3deg);
+}
+
+.card:hover .hidden{
+    display:block;
+}
+
+.card:hover label{
+    visibility: visible;
+}
+
+.intro{
+    height: 200px;
+    width: 458px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    /* background: rgba(27,27,27,.5); */
+    bottom: 200px;
+    border-radius: 0 0 10px 10px;
+    transition: .5s;
+}
+h1{
+    font-size: 30px;
+    visibility: hidden;
+}
+
+
+p{
+    margin-right: 20px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card a {
+    background-color: transparent; 
+    color: white;
+    border: 2px solid white;
+    padding: 16px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 100px 73px; */
+    /* transition: .5s; */
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 5px;
+}  
+  
+.card:hover a {
+    /* background-color: #555555;
+    color: white;
+    box-shadow: 0 5px 16px 0 rgba(248, 248, 248, 0.24), 0 17px 50px 0 rgba(150, 142, 142, 0.19);
+    border: 1px solid darkgray; */
+    visibility: visible;
+}
